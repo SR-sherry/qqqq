@@ -1,0 +1,13 @@
+service bof_revenge
+{
+    disable = no
+    type = UNLISTED
+    socket_type = stream
+    protocol = tcp
+    server = /home/bof_revenge/run.sh
+    user = bof_revenge
+    port = 4242
+    flags = REUSE
+    bind = 0.0.0.0
+    wait = no
+}
